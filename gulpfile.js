@@ -2,12 +2,13 @@
 // Import modules
 // ********************************************
 const gulp = require('gulp');
+const del = require('del');
+const htmlmin = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 const uglify = require('gulp-uglify');
-const htmlmin = require('gulp-htmlmin');
-const del = require('del');
+const imagemin = require('gulp-imagemin');
 const runSequence = require('run-sequence');
 
 // ********************************************
@@ -87,5 +88,6 @@ gulp.task('cp-files', () => {
 // Gulp task to copy images folder
 gulp.task('cp-images', () => {
   gulp.src('../public/images/**/*')
+    .pipe(imageMin())
     .pipe(gulp.dest('./dist/public/images'));
 });
