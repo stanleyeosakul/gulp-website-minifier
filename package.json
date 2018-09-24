@@ -1,7 +1,7 @@
 {
   "name": "gulp-website-minifier",
   "version": "1.0.0",
-  "description": "Buildpack to minify website files",
+  "description": "Buildpack to automate minification of static website files",
   "main": "gulpfile.js",
   "repository": "https://github.com/stanleyeosakul/gulp-website-minifier.git",
   "author": "Medsite Designs <info@medsitedesigns.com>",
