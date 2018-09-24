@@ -8,7 +8,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+const imageMin = require('gulp-imagemin');
 const runSequence = require('run-sequence');
 
 // ********************************************
